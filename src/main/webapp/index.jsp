@@ -1,5 +1,5 @@
 
-<%@page import="com.tech.blog.helper.ConnectionProvider"%>
+<%@page import="com.clean.bin.helper.ConnectionProvider"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@page import="java.sql.*"%>

@@ -1,10 +1,8 @@
-<%@page import="com.tech.blog.helper.ConnectionProvider"%>
-<%@ page import="com.tech.blog.entities.User"%>
+<%@page import="com.clean.bin.helper.ConnectionProvider"%>
+<%@ page import="com.clean.bin.entities.User"%>
 <%@ page errorPage="error_page.jsp"%>
-<%@ page import="com.tech.blog.entities.Message"%>
-<%@ page import="com.tech.blog.dao.PostDao"%>
+<%@ page import="com.clean.bin.entities.Message"%>
 <%@ page import="java.util.ArrayList"%>
-<%@ page import="com.tech.blog.entities.Category"%>
 
 <%
 User user = (User) session.getAttribute("currentUser");
@@ -279,15 +277,7 @@ if (user == null) {
 							<select class="form-control">
 								<option selected disabled>---Select Category---</option>
 								
-								<%
-								PostDao postd = new PostDao(ConnectionProvider.getConnection());
-								ArrayList<Category> list = postd.getAllCategories();
-								for(Category c : list){
-								%>
-								<option><%= c.getName() %></option>
-								<%
-								}
-								%>
+								
 
 							</select>
 
