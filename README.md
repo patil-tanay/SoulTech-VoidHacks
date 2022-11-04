@@ -2,7 +2,7 @@ VoidHack-4.0
 Team SoulTech
 
 Team members-
-Tanay Patil
-Mahak Gupta
-Hiteshsingh Pawar
-Kamlesh Kapse
+Tanay Patil <br>
+Mahak Gupta <br>
+Hiteshsingh Pawar <br>
+Kamlesh Kapse <br>
