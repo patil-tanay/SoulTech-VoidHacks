@@ -1,3 +1,8 @@
-# rajasthan_hackathon-4.0
-project on waste management-IOT based
---open index.html initially to view project
+VoidHack-4.0
+Team SoulTech
+
+Team members-
+Tanay Patil
+Mahak Gupta
+Hiteshsingh Pawar
+Kamlesh Kapse
