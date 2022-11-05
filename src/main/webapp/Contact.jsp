@@ -4,26 +4,25 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Clean Bin | Contact</title>
+<title>CleanBin | Contact</title>
 
 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="contact-form.css">
-    
-    <script type="text/javascript">
+
+<script type="text/javascript">
    function showMessage() {
        alert("Your query has been sent!!");
    }
 </script>
 
-    
 </head>
 
 <style>
 
 .contact-section .form-control{
-  border: 1px solid  #2fbfbc;
+  border: 1px solid  #2196F3;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -52,7 +51,8 @@
   font-size:18px;
 }
 .contact-h2 {
-  color: #fd4f00;
+/*   color: #fd4f00; */
+  color: #2196F3;
   padding-top:20px;
 }
 .contact-fields .form-group {
@@ -87,11 +87,11 @@
     letter-spacing: 0.3px;
 }
 .btn.btn-accent {
-    background: #2fbfbc;
+    background: #2196F3;
     color: white;
 }
 .btn.btn-accent:hover {
-    background: #269694;
+    background:#2196F3;
 }
 .ct-newsletter-section .container {
     width: 100%;
@@ -277,7 +277,7 @@ a {
          <label class="sr-only" for="comment">Type your message here</label>
          <textarea class="required form-control" id="comment" name="comment" placeholder="Type your message here&nbsp;*" rows="6"></textarea>
       </div>
-      <button class="btn btn-accent" type="submit" onClick="showMessage()">Submit</button>  
+      <button class="btn btn-accent" type="submit"  onClick="showMessage()">Submit</button>  
    </form>
 </div>
 

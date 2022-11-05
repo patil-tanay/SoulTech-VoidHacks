@@ -35,15 +35,22 @@ public class DetailsServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		PrintWriter out = response.getWriter();
 		
-		String dName =request.getParameter("d_name");
-		long dMobileNo = Long.parseLong(request.getParameter("d_mobileNo"));
-		
-		Details details = new Details(dName , dMobileNo);
+		String dName =request.getParameter("dName");
+		long dMobileNo = Long.parseLong(request.getParameter("dMobileNo"));
+		String schedule =request.getParameter("schedule");
+		String dAddress =request.getParameter("dAddress");
+		int dPin = Integer.valueOf(request.getParameter("dPin"));
+		String dZone =request.getParameter("dZone");
+		String dWard =request.getParameter("dWard");
+		String dLocality =request.getParameter("dLocality");
+		String dLandmark =request.getParameter("dLandmark");
+		Details details = new Details(dName , dMobileNo , schedule , dAddress, dPin, dZone ,dWard,dLocality, dLandmark);
 		
 		DetailsDao dao = new DetailsDao(ConnectionProvider.getConnection());
 		
 		if(dao.saveDetail(details)) {
 			//save..
+			response.sendRedirect("confirm.jsp");
 			out.println("done");
 		} else {
 			out.println("error");

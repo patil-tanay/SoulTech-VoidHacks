@@ -20,11 +20,16 @@ public class DetailsDao {
 		try {
 			
 			//Details --> database
-			String query = "insert into details(name, mobileno) values(?,?)";
+			String query = "insert into details(name, mobileno, daddress, dpin, dzone, dward, dlocality, dlandmark) values(?,?,?,?,?,?,?,?)";
 			PreparedStatement pstmt= this.con.prepareStatement(query);
 			pstmt.setString(1, details.getdName());
 			pstmt.setLong(2, details.getdMobileNo());
-			
+			pstmt.setString(3, details.getdAddress());
+			pstmt.setInt(4, details.getdPin());
+			pstmt.setString(5, details.getdZone());
+			pstmt.setString(6, details.getdWard());
+			pstmt.setString(7, details.getdLocality());
+			pstmt.setString(8, details.getdLandmark());			
 			pstmt.executeUpdate();
 			f=true;
 			

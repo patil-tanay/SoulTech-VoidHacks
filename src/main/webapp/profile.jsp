@@ -283,7 +283,7 @@ form .buttons button , .backBtn{
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header primary-background text-white">
-					<h5 class="modal-title" id="exampleModalLabel">Tech Blog</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Clean_Bin</h5>
 					<button type="button" class="close" data-dismiss="modal"
 						aria-label="Close">
 						<span aria-hidden="true">&times;</span>
@@ -432,9 +432,9 @@ form .buttons button , .backBtn{
 <!-- 	</form> -->
 
  <div class="container">
-        <header>Registration</header>
+        <header>GARBAGE PICKUP SERVICE</header>
 
-        <form action="#">
+        <form action="DetailsServlet" method="post">
             <div class="form first">
                 <div class="details personal">
                     <span class="title">Personal Details</span>
@@ -442,38 +442,36 @@ form .buttons button , .backBtn{
                     <div class="fields">
                         <div class="input-field">
                             <label>Full Name</label>
-                            <input type="text" placeholder="Enter your name" required>
+                            <input type="text" name="dName"  placeholder="Enter your name" required>
                         </div>
 
-                        <div class="input-field">
-                            <label>Date of Birth</label>
-                            <input type="date" placeholder="Enter birth date" required>
-                        </div>
+<!--                         <div class="input-field"> -->
+<!--                             <label>Date of Birth</label> -->
+<!--                             <input type="date" placeholder="Enter birth date" required> -->
+<!--                         </div> -->
 
-                        <div class="input-field">
-                            <label>Email</label>
-                            <input type="text" placeholder="Enter your email" required>
-                        </div>
+<!--                         <div class="input-field"> -->
+<!--                             <label>Email</label> -->
+<!--                             <input type="text" placeholder="Enter your email" required> -->
+<!--                         </div> -->
 
                         <div class="input-field">
                             <label>Mobile Number</label>
-                            <input type="number" placeholder="Enter mobile number" required>
+                            <input type="number" name="dMobileNo" placeholder="Enter mobile number" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Gender</label>
-                            <select required>
-                                <option disabled selected>Select gender</option>
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>Others</option>
+                            <label>Regular Scheduling Missed</label>
+                            <select name="schedule" required>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
                             </select>
                         </div>
 
-                        <div class="input-field">
-                            <label>Occupation</label>
-                            <input type="text" placeholder="Enter your ccupation" required>
-                        </div>
+<!--                         <div class="input-field"> -->
+<!--                             <label>Occupation</label> -->
+<!--                             <input type="text" placeholder="Enter your ccupation" required> -->
+<!--                         </div> -->
                     </div>
                 </div>
 
@@ -482,33 +480,33 @@ form .buttons button , .backBtn{
 
                     <div class="fields">
                         <div class="input-field">
-                            <label>ID Type</label>
-                            <input type="text" placeholder="Enter ID type" required>
+                            <label>Address</label>
+                            <input type="text" name="dAddress" placeholder="Enter complete address " required>
                         </div>
 
                         <div class="input-field">
-                            <label>ID Number</label>
-                            <input type="number" placeholder="Enter ID number" required>
+                            <label>Pin Code</label>
+                            <input type="number" name="dPin" placeholder="Enter pincode" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Issued Authority</label>
-                            <input type="text" placeholder="Enter issued authority" required>
+                            <label>Zone</label>
+                            <input type="text" name="dZone" placeholder="Enter zone" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Issued State</label>
-                            <input type="text" placeholder="Enter issued state" required>
+                            <label>Ward</label>
+                            <input type="text" name="dWard" placeholder="Enter ward" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Issued Date</label>
-                            <input type="date" placeholder="Enter your issued date" required>
+                            <label>Locality</label>
+                            <input type="text" name="dLocality" placeholder="Enter your Locality" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Expiry Date</label>
-                            <input type="date" placeholder="Enter expiry date" required>
+                            <label>Landmark</label>
+                            <input type="text" name="dLandmark" placeholder="Enter nearby landmark" required>
                         </div>
                     </div>
 
@@ -519,91 +517,6 @@ form .buttons button , .backBtn{
                 </div> 
             </div>
 
-            <div class="form second">
-                <div class="details address">
-                    <span class="title">Address Details</span>
-
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>Address Type</label>
-                            <input type="text" placeholder="Permanent or Temporary" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Nationality</label>
-                            <input type="text" placeholder="Enter nationality" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>State</label>
-                            <input type="text" placeholder="Enter your state" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>District</label>
-                            <input type="text" placeholder="Enter your district" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Block Number</label>
-                            <input type="number" placeholder="Enter block number" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Ward Number</label>
-                            <input type="number" placeholder="Enter ward number" required>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="details family">
-                    <span class="title">Family Details</span>
-
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>Father Name</label>
-                            <input type="text" placeholder="Enter father name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Mother Name</label>
-                            <input type="text" placeholder="Enter mother name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Grandfather</label>
-                            <input type="text" placeholder="Enter grandfther name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Spouse Name</label>
-                            <input type="text" placeholder="Enter spouse name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Father in Law</label>
-                            <input type="text" placeholder="Father in law name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Mother in Law</label>
-                            <input type="text" placeholder="Mother in law name" required>
-                        </div>
-                    </div>
-
-                    <div class="buttons">
-                        <div class="backBtn">
-                            <i class="uil uil-navigator"></i>
-                            <span class="btnText">Back</span>
-                        </div>
-                        
-                        <button class="sumbit">
-                            <span class="btnText">Submit</span>
-                            <i class="uil uil-navigator"></i>
-                        </button>
-                    </div>
-                </div> 
-            </div>
         </form>
     </div>
 
