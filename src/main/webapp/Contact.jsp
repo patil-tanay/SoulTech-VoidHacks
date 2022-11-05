@@ -4,12 +4,20 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Clean Bin | Contact</title>
 
 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="contact-form.css">
+    
+    <script type="text/javascript">
+   function showMessage() {
+       alert("Your query has been sent!!");
+   }
+</script>
+
+    
 </head>
 
 <style>
@@ -269,7 +277,7 @@ a {
          <label class="sr-only" for="comment">Type your message here</label>
          <textarea class="required form-control" id="comment" name="comment" placeholder="Type your message here&nbsp;*" rows="6"></textarea>
       </div>
-      <button class="btn btn-accent" type="submit">Submit</button>  
+      <button class="btn btn-accent" type="submit" onClick="showMessage()">Submit</button>  
    </form>
 </div>
 
